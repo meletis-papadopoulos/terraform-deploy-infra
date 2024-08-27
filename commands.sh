@@ -1,21 +1,21 @@
-# get terraform version
+# Get terraform version
 terraform version
 # Terraform v0.13.5
 
-# get terraform commands
+# Get terraform commands
 terraform
 
-# init terraform's Azure provider (main.tf)
+# Init terraform's Azure provider (main.tf)
 terraform init
 
-# display the terraform template
+# Display the terraform template
 cat main.tf
 
-# plan and preview terraform changes
+# Plan and preview terraform changes
 terraform plan
 
-# deploy terraform infra
+# Deploy terraform infra
 terraform apply
 
-# destroy infra
+# Destroy infra
 terraform destroy
