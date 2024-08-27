@@ -16,13 +16,13 @@ provider "azurerm" {
 
 # Resource Group
 resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
-  location = "West Europe"
+  name     = var.resource_group_name
+  location = var.resource_group_location
 }
 
 # Service Plan
 resource "azurerm_app_service_plan" "example" {
-  name                = "example-appserviceplan"
+  name                = var.app_service_plan_name
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
 
@@ -35,7 +35,7 @@ resource "azurerm_app_service_plan" "example" {
 # App Service
 resource "azurerm_app_service" "example" {
   # The name for the App Service, should be globally unique
-  name                = "terraform-demo-mel"
+  name                = var.app_service_name
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
   # The "id" property will be generated when the resource (app service plan) is deployed
