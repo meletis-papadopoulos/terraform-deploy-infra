@@ -15,6 +15,8 @@ provider "azurerm" {
 }
 
 # Resource Group
+# "example" is like an instance of type "azurerm_resource_group"
+# Practically, this has to be named appropriately!
 resource "azurerm_resource_group" "example" {
   name     = var.resource_group_name
   location = var.resource_group_location
