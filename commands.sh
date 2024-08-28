@@ -1,6 +1,5 @@
 # Get terraform version
 terraform version
-# Terraform v0.13.5
 
 # Get terraform commands
 terraform
