@@ -1,19 +1,3 @@
-# Use "azurerm" provider
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "4.0.1"
-    }
-  }
-}
-
-provider "azurerm" {
-  # Configuration options
-  features {}
-  subscription_id = "61375121-a3cf-40d6-be22-0d1039870663"
-}
-
 # Resource Group
 # "example" is like an instance of type "azurerm_resource_group"
 # Practically, this has to be named appropriately!
