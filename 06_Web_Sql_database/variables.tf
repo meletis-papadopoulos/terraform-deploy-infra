@@ -25,7 +25,7 @@ variable "sql_server_name" {
 
 variable "sql_database_name" {
   type        = string
-  description = "SQL Database name in AZure"
+  description = "SQL Database name in Azure"
 }
 
 variable "sql_admin_login" {
