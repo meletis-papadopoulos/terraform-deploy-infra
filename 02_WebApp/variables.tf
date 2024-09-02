@@ -1,9 +1,9 @@
-# Define variable names
-# --- It's okay to publish this file ---
+variable "subscription_id" {
+  type        = string
+  description = "Subscription ID for Azure"
+}
 
-# Variable name
 variable "resource_group_name" {
-  # Default value for the variable
   type        = string
   description = "RG name in Azure"
 }
