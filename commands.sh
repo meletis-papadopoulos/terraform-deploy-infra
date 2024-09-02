@@ -4,6 +4,11 @@ terraform init
 # List existing workspaces
 terraform workspace list
 
+# Point (switch) to a different workspace (non-active)
+# The "*" on the left of a workspace, means it's active
+# terraform workspace select <workspace_name>
+terraform workspace select dev
+
 # Create workspace (Dev)
 terraform workspace new dev
 terraform workspace list
