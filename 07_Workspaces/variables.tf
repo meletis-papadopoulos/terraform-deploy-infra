@@ -4,7 +4,7 @@ variable "subscription_id" {
 }
 
 variable "resource_group_names" {
-  type = map
+  type = map(any)
   default = {
     dev  = "dev-rg"
     test = "test-rg"

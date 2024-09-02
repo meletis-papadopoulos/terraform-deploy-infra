@@ -32,4 +32,4 @@ terraform workspace list
 terraform plan -out prod.tfplan
 
 # Apply (Prod)
-terraform prod.tfplan
+terraform apply prod.tfplan
